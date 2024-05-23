@@ -4,7 +4,7 @@ public static class DamageUtils
 {
     public static void CreateDamageEvent(this World world, Entity target, float damageAmount)
     {
-        if (target.IsNullOrDisposed() || target.Has<DeathMarker>())
+        if (target.IsNullOrDisposed() || target.Has<DeathMarker>() || !target.Has<Health>())
         {
             return;
         }

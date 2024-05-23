@@ -24,10 +24,6 @@ public sealed class DamageSystem : UpdateSystem
         foreach (var item in _filter)
         {
             var target = item.GetComponent<DamageEvent>().Target;
-            if (target.Has<DeathMarker>())
-            {
-                continue;
-            }
             var damage = item.GetComponent<DamageEvent>().DamageAmount;
             ref var health = ref target.GetComponent<Health>();
             var healthRemain = health.CurrentHP - damage;
