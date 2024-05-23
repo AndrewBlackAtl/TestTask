@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1d1539d95c2264ca4e1616179f5e76, type: 3}
+  m_Name: EnemyConfig
+  m_EditorClassIdentifier: 
+  _enemyPrefab: {fileID: 8872055166024018760, guid: ff57c2888046ca744bac46729188efb0,
+    type: 3}
+  _hp: 100
+  _moveSpeed: 5
+  _damage: 5
+  _attackCooldown: 1
+  _stopRadius: 3
+  _spawnObjectOnDeath: {fileID: 7214015114700915774, guid: 9efdc0a08c1b2ca4d9e84cdc28aba6b8,
+    type: 3}
+  _objectSpawnProbability: 0.5
